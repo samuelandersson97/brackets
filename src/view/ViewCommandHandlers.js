@@ -174,7 +174,7 @@ define(function (require, exports, module) {
             }
         });
     }
-
+    
     /**
      * @private
      * Removes the styles used to update the font family
@@ -256,6 +256,7 @@ define(function (require, exports, module) {
         currFontSize = fontSize;
         prefs.set("fontSize", fontSize);
     }
+    
 
     /**
      * Font size getter to get the current font size for the document editor

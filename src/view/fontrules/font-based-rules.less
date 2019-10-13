@@ -22,14 +22,20 @@
 @defaultmenuwidth: 300px/@defaultfontsize;
 
 @lineheight: @fontsize +  @fontsize * @lineheightoffset;
-
+@height: @lineheight;
+@margin: @height/8;
 .CodeMirror {
     font-size: @fontsize !important;
 }
 
-.codehint-menu .dropdown-menu li a, .inlinemenu-menu .dropdown-menu li a {
+.codehint-menu .dropdown-menu li a, .inlinemenu-menu .dropdown-menu li a, .open-files-container li a, #project-files-header, .main-view .sidebar, .jstree-brackets li a{
     font-size: @fontsize !important;
-    line-height: @lineheight  !important;
+    line-height: @lineheight  !important;   
+}
+
+.sidebar-selection, .filetree-selection, .sidebar-selection-extension, .filetree-selection-extension, .jstree-brackets li a, .open-files-container li{
+    height: @height !important;
+    margin-top: @margin !important;
 }
 
 span.brackets-js-hints-with-type-details {
